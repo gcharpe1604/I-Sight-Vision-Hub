@@ -249,3 +249,84 @@ body {
   font-size: 0.95em;
   margin-top: 1em;
 }
+
+/* 📱 Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+  .navLink {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-left: 0;
+  }
+
+  #topButtons {
+    margin-top: 1em;
+  }
+
+  #welcomeDiv {
+    height: auto;
+    padding: 2em 1em;
+  }
+
+  #frontHeading {
+    font-size: 2em;
+  }
+
+  #slogan {
+    font-size: 1.1em;
+  }
+
+  .productHeading, .ourTestimonials {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.2em;
+  }
+
+  .flow1, .flow2, .flow3 {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em 0.5em;
+  }
+
+  .wearProducts, .careProducts, .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section, .section2 {
+    width: 95%;
+    margin-bottom: 1em;
+  }
+
+  .productImage {
+    height: 12em;
+  }
+
+  .personPhoto {
+    height: 4em;
+  }
+
+  .review {
+    font-size: 1em;
+  }
+
+  .stars {
+    font-size: 1.1rem;
+  }
+
+  .rating {
+    font-size: 0.9em;
+  }
+
+  .viewAllBtn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
