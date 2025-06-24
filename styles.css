@@ -6,11 +6,11 @@
 
 body {
   font-family: Poppins, sans-serif;
-  background-color: #d9e9ed;
-  overflow-x: hidden;
+  background-color: #ddebef;
 }
 
 .navLink {
+  position: relative;
   resize: both;
   background-color: #1a1f2b;
   display: flex;
@@ -67,7 +67,7 @@ body {
 
 #welcomeDiv {
   position: relative;
-  height: 40em;
+  height: 41.524em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
   z-index: -1;
 }
@@ -120,4 +120,132 @@ body {
   color: white;
   cursor: pointer;
   text-decoration: none;
+}
+
+#bookConsultBtn:hover, #eyeCareBtn:hover, #eyeWearBtn:hover {
+  background-color: #2a5796;
+}
+
+#bookConsultBtn:active, #eyeCareBtn:active, #eyeWearBtn:active {
+  background-color: #1e3f6d;
+}
+
+.productHeading, .ourTestimonials {
+  position: relative;
+  color: #2c2c2c;
+  margin-top: 0.55em;
+  text-align: center;
+  background-color: rgb(247, 255, 255);
+  border: 1px solid #2c2c2c;
+  padding: 0.5em;
+  border-radius: 2em;
+  margin-left: 26em;
+  margin-right: 26em;
+}
+
+.flow1, .flow2, .flow3 {
+  position: relative;
+  background-color: rgb(234, 247, 247);
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border: none;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.flow3 {
+  margin-bottom: 2em;
+  overflow-x: auto;
+}
+
+.wearProducts, .careProducts, .testimonials {
+  display: flex;
+  gap: 0.8em;
+}
+
+.productImage {
+  height: 14em;
+  border-radius: 2em;
+}
+
+.section {
+  position: relative;
+  background-color: rgb(208, 235, 235);
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.section2 {
+  position: relative;
+  background-color: rgb(208, 235, 235);
+  border-radius: 1em;
+  padding: 1em 0.97em;
+  text-align: center;
+}
+
+.productName {
+  margin-top: 0.5em;
+}
+
+.sizeFit, .contains {
+  font-size: 0.95em;
+  margin-top: 0.5em;
+}
+
+.productPrice {
+  margin-top: 1em;
+}
+
+.viewAllBtn {
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #1f3a5f;
+  padding: 0.65em 1.5em;
+  border: none;
+  border-radius: 2em;
+  color: whitesmoke;
+  margin-left: 38em;
+  cursor: pointer;
+}
+
+.viewAllBtn:hover {
+  background-color: #2a5796;
+}
+
+.viewAllBtn:active {
+  background-color: #1e3f6d;
+}
+
+.personPhoto {
+  height: 4.5em;
+  border-radius: 2.5em;
+  border: 2px solid #2c2c2c;
+}
+
+.personName {
+  margin-top: 0.5em;
+}
+
+.personProfession {
+  font-size: 0.95em;
+  margin-top: 0.25em;
+}
+
+.review {
+  margin-top: 0.7em;
+  font-family: 'Lora', serif;
+  font-size: 1.124em;
+}
+
+.stars {
+  color: #f5c518; /* golden yellow */
+  font-size: 1.2rem;
+  margin-top: 0.35em;
+}
+
+.rating {
+  font-size: 0.95em;
+  margin-top: 1em;
 }
