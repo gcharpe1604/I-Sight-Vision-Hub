@@ -6,11 +6,12 @@
 
 body {
   font-family: Poppins, sans-serif;
-  background-color: #ddebef;
+  background-color: #f0f7f9;
 }
 
 .navLink {
   position: relative;
+  z-index: 2;
   resize: both;
   background-color: #1a1f2b;
   display: flex;
@@ -20,7 +21,10 @@ body {
 }
 
 .logo {
-  
+  margin-left: 1.5em;
+  background: whitesmoke;
+  padding: 0.85em 1em;
+  border-radius: 2em;
 }
 
 .navbar {
@@ -63,7 +67,7 @@ body {
 
 #welcomeDiv {
   position: relative;
-  height: 41.524em;
+  height: 41.525em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -106,7 +110,7 @@ body {
   margin-top: 2em;
 }
 
-#bookConsultBtn, #eyeCareBtn, #eyeWearBtn {
+#bookConsultBtn, #aboutBtn {
   margin: 0.75em;
   border: none;
   border-radius: 12px;
@@ -118,11 +122,11 @@ body {
   text-decoration: none;
 }
 
-#bookConsultBtn:hover, #eyeCareBtn:hover, #eyeWearBtn:hover {
+#bookConsultBtn:hover, #aboutBtn:hover {
   background-color: #2a5796;
 }
 
-#bookConsultBtn:active, #eyeCareBtn:active, #eyeWearBtn:active {
+#bookConsultBtn:active, #aboutBtn:hover {
   background-color: #1e3f6d;
 }
 
@@ -141,7 +145,10 @@ body {
 
 .flow1, .flow2, .flow3 {
   position: relative;
-  background-color: rgb(234, 247, 247);
+  background-color: rgb(238, 252, 252);
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  border: 0.5px solid rgba(120, 120, 120, 0.4);
   margin-top: 1em;
   margin-left: 5em;
   margin-right: 5em;
@@ -153,6 +160,23 @@ body {
 .flow3 {
   margin-bottom: 2em;
   overflow-x: auto;
+}
+
+.flow4 {
+  font-family: Poppins, sans-serif;
+  border-radius: 3em;
+  align-self: center;
+  padding: 1.5em;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: block;
+  background: rgb(210, 227, 227);
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
+  border: 0.2px solid rgba(120, 120, 120, 0.4);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  opacity: 0.9;
 }
 
 .wearProducts, .careProducts, .testimonials {
@@ -295,6 +319,109 @@ body {
 
 .footer-contact p {
   margin: 0.4em 0;
+}
+
+#consultHeading {
+  font-family: Arial, sans-serif;
+  color: #2c2c2c;
+  text-align: center;
+  margin-top: 1.25em;
+  font-size: 2.25em;
+}
+
+#startingp {
+  font-family: Arial, sans-serif;
+  color: #2c2c2c;
+  text-align: center;
+  margin-top: 0.85em;
+  font-size: 1.3em;
+  margin-bottom: 0em;
+}
+
+.information {
+  color: #2c2c2c;
+  margin-left: 2%;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.form-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding: 0 2em;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 250px;
+}
+
+label {
+  color: #2c2c2c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  text-align: center;
+}
+input,
+select,
+#symptoms {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background-color: #2262bc;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.75%;
+  margin-left: 15%;
+  width: 20em;
+}
+
+button[type="submit"]:hover {
+  background-color: #3773af;
+}
+
+button[type="submit"]:active {
+  background-color: #0c2f7d;
+}
+
+button[type="reset"] {
+  background-color: rgb(215, 25, 25);
+  color: white;
+  width: 20em;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.75%;
+  height: 2.75em;
+  margin-left: -1%;
+}
+
+button[type="reset"]:hover {
+  background-color: rgb(179, 7, 7);
+}
+
+button[type="reset"]:active {
+  background-color: rgb(150, 0, 0);
 }
 
 /* 📱 Responsive Layout for Small Screens */
