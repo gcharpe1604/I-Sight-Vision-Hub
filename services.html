@@ -1,126 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Sight</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Sight</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navLink">
-            <div><a class="logo" href="index.html"><img src="#" alt="Logo"></a></div>
-            <ul class="navbar">
-                <li><a class="hotbar" href="index.html">Home</a></li>
-                <li><a class="hotbar" href="community.html">Community</a></li>
-                <li><a class="hotbar" href="services.html">Services</a></li>
-                <li><a class="hotbar" href="eyecare.html">Shop Eye Care</a></li>
-                <li><a class="hotbar" href="eyewear.html">Shop Eye Wear</a></li>
-                <li><a class="hotbar" href="ngosupport.html">NGO's</a></li>
-                <li><a class="hotbar" href="about.html">About</a></li>
-            </ul>
-            <div id="topButtons">
-                <a href="signin.html" id="signIn">Sign In</a>
-                <a href="register.html" id="signUp">Register</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <h2 id="consultHeading">Book Your Consultation</h2>
-        <p id="startingp">Schedule an appointment with our expert eye care professionals</p>
+  <header>
+    <nav class="navLink">
+      <div><a class="logo" href="index.html"><img src="#" alt="Logo"></a></div>
+      <ul class="navbar">
+        <li><a class="hotbar" href="index.html">Home</a></li>
+        <li><a class="hotbar" href="community.html">Community</a></li>
+        <li><a class="hotbar" href="services.html">Services</a></li>
+        <li><a class="hotbar" href="eyecare.html">Shop Eye Care</a></li>
+        <li><a class="hotbar" href="eyewear.html">Shop Eye Wear</a></li>
+        <li><a class="hotbar" href="ngosupport.html">NGO's</a></li>
+        <li><a class="hotbar" href="about.html">About</a></li>
+      </ul>
+      <div id="topButtons">
+        <a href="signin.html" id="signIn">Sign In</a>
+        <a href="register.html" id="signUp">Register</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <h2 id="consultHeading">Book Your Consultation</h2>
+    <p id="startingp">Schedule an appointment with our expert eye care professionals</p>
 
-        <div class="flow4">
-            <h3 class="information">Personal Information</h3>
-            <form id="personalInformation" action="#" autocomplete="off" method="get">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="fname">First Name*</label>
-                    <input type="text" id="fname" placeholder="Enter First Name" required />
-                </div>
-                <div class="form-group">
-                    <label for="lname">Last Name*</label>
-                    <input type="text" id="lname" placeholder="Enter Last Name" required />
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" placeholder="Enter Email Address" required />
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number*</label>
-                    <input type="tel" id="phone" placeholder="Enter Phone Number" required />
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="age">Age*</label>
-                    <input type="number" id="age" placeholder="Enter Your Age" required />
-                </div>
-                <div class="form-group">
-                    <label for="emergency">Emergency Contact</label>
-                    <input type="tel" id="emergency" placeholder="Enter Emergency Contact" required />
-                </div>
-            </div>
-            </form>
-
-            <h3 class="information">Consultation Type</h3>
-            <form id="consultationType" action="#" autocomplete="off" method="get">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="consultationType">Consultation Type*</label>
-                    <select id="consultationType" name="consultationType" required>
-                        <option value="">Select Consultation Type</option>
-                        <option value="onlineConsultation">Online Consultation</option>
-                        <option value="inPersonConsultation">In-Person Consultation</option>
-                    </select>
-                </div>
-            </div>
-            </form>
-
-            <h3 class="information">Preferred Date and Time</h3>
-            <form id="dateTime" action="#" autocomplete="off" method="get">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="date">Preferred Date*</label>
-                    <input type="date" id="date" name="date" required />
-                </div>
-                <div class="form-group">
-                <label for="time">Preferred Time*</label>
-                <select id="time" name="time" required>
-                    <option value="">Select Time</option>
-                    <option value="09:00">09:00 AM</option>
-                    <option value="10:00">10:00 AM</option>
-                    <option value="11:00">11:00 AM</option>
-                    <option value="12:00">12:00 PM</option>
-                    <option value="13:00">01:00 PM</option>
-                    <option value="14:00">02:00 PM</option>
-                    <option value="15:00">03:00 PM</option>
-                    <option value="16:00">04:00 PM</option>
-                    <option value="17:00">05:00 PM</option>
-                </select>
-                </div>
-            </div>
-            </form>
-
-            <h3 class="information">Medical Information</h3>
-            <form id="medicalInformation" action="#" autocomplete="off" method="get">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="symptoms">Current Symptoms or Concerns*</label>
-                    <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <button type="submit">Proceed</button>
-                <button type="reset">Reset</button>
-            </div>
-            </form>
+    <div class="flow4">
+      <h3 class="information">Personal Information<span style="color:red">*</span></h3>
+      <form id="personalInformation" action="#" autocomplete="off" method="get">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="label1" for="fname">First Name<span style="color:red">*</span></label>
+            <input type="text" id="fname" placeholder="Enter First Name" required />
+          </div>
+          <div class="form-group">
+            <label class="label1" for="lname">Last Name<span style="color:red">*</span></label>
+            <input type="text" id="lname" placeholder="Enter Last Name" required />
+          </div>
         </div>
-    </main>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="label1" for="email">Email<span style="color:red">*</span></label>
+            <input type="email" id="email" placeholder="Enter Email Address" required />
+          </div>
+          <div class="form-group">
+            <label class="label1" for="phone">Phone Number<span style="color:red">*</span></label>
+            <input type="tel" id="phone" placeholder="Enter Phone Number" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="label1" for="age">Age<span style="color:red">*</span></label>
+            <input type="number" id="age" placeholder="Enter Your Age" required />
+          </div>
+          <div class="form-group">
+            <label class="label1" for="emergency">Emergency Contact</label>
+            <input type="tel" id="emergency" placeholder="Enter Emergency Contact" required />
+          </div>
+        </div>
+      </form>
+
+      <h3 class="information">Consultation Type<span style="color:red">*</span></h3>
+      <form id="consultationType" action="#" autocomplete="off" method="get">
+        <div class="form-row">
+          <div class="form-group">
+            <select id="consultationType" name="consultationType" required>
+              <option value="">Select Consultation Type</option>
+              <option value="onlineConsultation">Online Consultation</option>
+              <option value="inPersonConsultation">In-Person Consultation</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <h3 class="information">Preferred Date and Time<span style="color:red">*</span></h3>
+      <form id="dateTime" action="#" autocomplete="off" method="get">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="label1" for="date">Preferred Date<span style="color:red">*</span></label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label class="label1" for="time">Preferred Time<span style="color:red">*</span></label>
+            <select id="time" name="time" required>
+              <option value="">Select Time</option>
+              <option value="09:00">09:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">01:00 PM</option>
+              <option value="14:00">02:00 PM</option>
+              <option value="15:00">03:00 PM</option>
+              <option value="16:00">04:00 PM</option>
+              <option value="17:00">05:00 PM</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <h3 class="information">Medical Information</h3>
+      <form id="medicalInformation" action="#" autocomplete="off" method="get">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="label1" for="symptoms">Current Symptoms or Concerns<span style="color:red">*</span></label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" id="submitBtn">Proceed</button>
+          <button type="reset" id="resetBtn">Reset</button>
+        </div>
+      </form>
+    </div>
+  </main>
 </body>
 </html>

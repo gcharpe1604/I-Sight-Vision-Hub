@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Sight</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Sight</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <nav class="navLink">
-            <div><a class="logo" href="index.html"><img src="#" alt="Logo"></a></div>
-            <ul class="navbar">
-                <li><a class="hotbar" href="index.html">Home</a></li>
-                <li><a class="hotbar" href="community.html">Community</a></li>
-                <li><a class="hotbar" href="services.html">Services</a></li>
-                <li><a class="hotbar" href="eyecare.html">Shop Eye Care</a></li>
-                <li><a class="hotbar" href="eyewear.html">Shop Eye Wear</a></li>
-                <li><a class="hotbar" href="ngosupport.html">NGO's</a></li>
-                <li><a class="hotbar" href="about.html">About</a></li>
-            </ul>
-            <div id="topButtons">
-                <a href="signin.html" id="signIn">Sign In</a>
-                <a href="register.html" id="signUp">Register</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="signupForm">
-            <div id="inputbox">
-                <label for="name">Name*</label>
-                <input id="fname" type="text" placeholder="Enter Name" name="name" required />
-            </div>
-        </section>
-    </main>
+  <header>
+    <nav class="navLink">
+      <div><a class="logo" href="index.html"><img src="#" alt="Logo" /></a></div>
+      <ul class="navbar">
+        <li><a class="hotbar" href="index.html">Home</a></li>
+        <li><a class="hotbar" href="community.html">Community</a></li>
+        <li><a class="hotbar" href="services.html">Services</a></li>
+        <li><a class="hotbar" href="eyecare.html">Shop Eye Care</a></li>
+        <li><a class="hotbar" href="eyewear.html">Shop Eye Wear</a></li>
+        <li><a class="hotbar" href="ngosupport.html">NGO's</a></li>
+        <li><a class="hotbar" href="about.html">About</a></li>
+      </ul>
+      <div id="topButtons">
+        <a href="signin.html" id="signIn">Sign In</a>
+        <a href="register.html" id="signUp">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="consultHeading">Create New Account</h2>
+    <p id="startingp">Step into a future where eye care is easy and smart.</p>
+    
+    <section class="flow5">
+      <p class="note"><strong>Note:</strong>
+      <br>
+      <span style="margin-left: 10%;">Fields marked with an asterisk (<span style="color:red">*</span>) are required.</span></p>
+
+      <div id="inputbox">
+        <!-- Name -->
+        <label class="label2" for="fullName">Name<span style="color:red">*</span></label><br/>
+        <input class="input2" id="fullName" type="text" placeholder="Enter Name" name="name" required /><br/>
+
+        <!-- Email -->
+        <label class="label2" for="emailID">Email<span style="color:red">*</span></label><br/>
+        <input class="input2" id="emailID" type="email" placeholder="Enter Email Address" name="email" required /><br/>
+
+        <!-- Phone and DOB -->
+        <div class="mobileDate">
+          <div class="mobileTable">
+            <label class="labelMobile" for="mobile">Phone Number<span style="color:red">*</span></label>
+            <input class="inputMobile" type="tel" id="mobile" name="mobile" placeholder="Enter Phone Number" required />
+          </div>
+          <div class="dateTable">
+            <label class="labelDate" for="dateofBirth">Date of Birth<span style="color:red">*</span></label>
+            <input class="inputDate" type="date" id="dateofBirth" name="date" required />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <label class="label2" for="password">Create Password<span style="color:red">*</span></label><br/>
+        <input class="input2" id="password" type="password" placeholder="Create Password" name="password" required /><br/>
+
+        <!-- Confirm Password -->
+        <label class="label2" for="Cpassword">Confirm Password<span style="color:red">*</span></label><br/>
+        <input class="input2" id="Cpassword" type="password" placeholder="Confirm Password" name="cpassword" required />
+      </div>
+
+      <!-- Buttons -->
+      <div id="buttons">
+        <button id="continueBtn" onclick="return validateForm()">Continue</button>
+        <button id="resetBtn1" type="reset">Reset</button>
+      </div>
+
+      <!-- Google -->
+      <a>
+        <button id="continueGoogle">
+          <img class="googleImage" src="Google__G__logo.svg.webp" alt="Google Logo"/>
+          Continue with Google
+        </button>
+      </a>
+      <p id="signinp">Already have an account? <a id="signInLink" href="signin.html">Sign In</a></p>
+    </section>
+  </main>
+
+  <script>
+    function validateForm() {
+      const pass = document.getElementById("password").value;
+      const cpass = document.getElementById("Cpassword").value;
+      if (pass !== cpass) {
+        alert("Passwords do not match.");
+        return false;
+      }
+      return true;
+    }
+  </script>
 </body>
 </html>
