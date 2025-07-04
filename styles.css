@@ -454,8 +454,17 @@ select,
   padding: 0.4em 8.1em;
   border-radius: 1em;
   border: 0.2px solid rgba(120, 120, 120, 0.4);
+  background-color: rgb(255, 248, 248);
   margin-left: 8%;
   margin-top: 2%;
+}
+
+#continueGoogle:hover {
+  background: white;
+}
+
+#continueGoogle:active {
+  background: rgb(255, 240, 240);
 }
 
 .mobileDate {
@@ -523,10 +532,19 @@ select,
   font-size: 1em;
   margin-left: 8%;
   margin-top: 2%;
+  cursor: pointer;
+}
+
+#continueBtn:hover {
+  background: rgb(26, 194, 91);
+}
+
+#continueBtn:active {
+  background: rgb(0, 128, 50);
 }
 
 #resetBtn1 {
-  background: red;
+  background: rgb(216, 9, 9);
   color: white;
   padding: 0.6em;
   width: 13em;
@@ -534,6 +552,15 @@ select,
   border-radius: 1em;
   font-size: 1em;
   margin-left: 3%;
+  cursor: pointer;
+}
+
+#resetBtn1:hover {
+  background: rgb(248, 30, 30);
+}
+
+#resetBtn1:active {
+  background: rgb(156, 18, 18);
 }
 
 #signinp {
@@ -541,6 +568,7 @@ select,
   font-size: 1em;
   text-align: center;
   margin-top: 3%;
+  cursor: pointer;
 }
 
 #signInLink {
