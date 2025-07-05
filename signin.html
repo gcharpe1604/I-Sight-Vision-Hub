@@ -3,50 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>I Sight - Sign In</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>I-Sight - Sign In</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
-<body>
-  <header>
-    <nav class="navLink">
-      <div>
-        <a class="logo" href="index.html"><img src="#" alt="Logo" /></a>
-      </div>
-      <ul class="navbar">
-        <li><a class="hotbar" href="index.html">Home</a></li>
-        <li><a class="hotbar" href="community.html">Community</a></li>
-        <li><a class="hotbar" href="services.html">Services</a></li>
-        <li><a class="hotbar" href="eyecare.html">Shop Eye Care</a></li>
-        <li><a class="hotbar" href="eyewear.html">Shop Eye Wear</a></li>
-        <li><a class="hotbar" href="ngosupport.html">NGO's</a></li>
-        <li><a class="hotbar" href="about.html">About</a></li>
-      </ul>
-      <div id="topButtons">
-        <a href="signin.html" id="signIn">Sign In</a>
-        <a href="register.html" id="signUp">Register</a>
-      </div>
-    </nav>
-  </header>
 
+<body class="sign_in_body">
   <main>
     <div class="signin-wrapper">
       <h2 class="signin-heading">Sign In</h2>
-      <form class="signin-form" action="#" method="post">
+      <form class="signin-form" id="loginForm" action="#" method="post">
         <div class="form-group">
           <label for="email">Email or Phone Number*</label>
           <input type="text" id="email" name="email" required />
         </div>
+
         <div class="form-group">
           <label for="password">Password*</label>
           <input type="password" id="password" name="password" required />
         </div>
+
         <button type="submit" id="submitBtn">Sign In</button>
-      </form>
+      </form><br><br>
+
+      <div id="g_id_onload"
+           data-client_id="127180629098-p6b4tc5rcgcmcs4r8vfp0kr3r1hhq4ma.apps.googleusercontent.com"
+           data-context="signin"
+           data-callback="handleCredentialResponse"
+           data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="pill"
+           data-theme="outline"
+           data-text="sign_in_with"
+           data-size="large"
+           data-logo_alignment="left">
+      </div>
       <p id="signinp">
-        Don't have an account? <a id="signInLink" href="register.html">Register here</a>
+        Don't have an account?
+        <a id="signInLink" href="register.html">Register here</a>
       </p>
     </div>
   </main>
+  <script src="signin.js"></script>
 </body>
 </html>

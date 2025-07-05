@@ -6,6 +6,8 @@
   <title>I Sight</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="styles.css"/>
+  <!-- Google Identity Services SDK -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <header>
@@ -37,15 +39,15 @@
       <span style="margin-left: 10%;">Fields marked with an asterisk (<span style="color:red">*</span>) are required.</span></p>
 
       <div id="inputbox">
-        <!-- Name -->
+        
         <label class="label2" for="fullName">Name<span style="color:red">*</span></label><br/>
         <input class="input2" id="fullName" type="text" placeholder="Enter Name" name="name" required /><br/>
 
-        <!-- Email -->
+        
         <label class="label2" for="emailID">Email<span style="color:red">*</span></label><br/>
         <input class="input2" id="emailID" type="email" placeholder="Enter Email Address" name="email" required /><br/>
 
-        <!-- Phone and DOB -->
+        
         <div class="mobileDate">
           <div class="mobileTable">
             <label class="labelMobile" for="mobile">Phone Number<span style="color:red">*</span></label>
@@ -57,42 +59,42 @@
           </div>
         </div>
 
-        <!-- Password -->
+
         <label class="label2" for="password">Create Password<span style="color:red">*</span></label><br/>
         <input class="input2" id="password" type="password" placeholder="Create Password" name="password" required /><br/>
 
-        <!-- Confirm Password -->
+
         <label class="label2" for="Cpassword">Confirm Password<span style="color:red">*</span></label><br/>
         <input class="input2" id="Cpassword" type="password" placeholder="Confirm Password" name="cpassword" required />
       </div>
 
-      <!-- Buttons -->
+
       <div id="buttons">
         <button id="continueBtn" onclick="return validateForm()">Continue</button>
         <button id="resetBtn1" type="reset">Reset</button>
       </div>
 
-      <!-- Google -->
-      <a>
-        <button id="continueGoogle">
-          <img class="googleImage" src="Google__G__logo.svg.webp" alt="Google Logo"/>
-          Continue with Google
-        </button>
-      </a>
+      <div style="margin-top: 1.5em;">
+        <div id="g_id_onload"
+             data-client_id="127180629098-p6b4tc5rcgcmcs4r8vfp0kr3r1hhq4ma.apps.googleusercontent.com"
+             data-context="signup"
+             data-callback="handleCredentialResponse"
+             data-auto_prompt="false">
+        </div>
+
+        <div class="g_id_signin"
+             data-type="standard"
+             data-shape="pill"
+             data-theme="outline"
+             data-text="signup_with"
+             data-size="large"
+             data-logo_alignment="left">
+        </div>
+      </div>
+
       <p id="signinp">Already have an account? <a id="signInLink" href="signin.html">Sign In</a></p>
     </section>
   </main>
-
-  <script>
-    function validateForm() {
-      const pass = document.getElementById("password").value;
-      const cpass = document.getElementById("Cpassword").value;
-      if (pass !== cpass) {
-        alert("Passwords do not match.");
-        return false;
-      }
-      return true;
-    }
-  </script>
-</body>
+  <script src = "signin.html"></script>
+  </body>
 </html>

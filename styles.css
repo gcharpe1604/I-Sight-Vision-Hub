@@ -722,7 +722,19 @@ select,
 #submitBtn:active {
   background-color: #0c2f7d;
 }
-
+.googleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 5em;           
+}
+#signInGoogle{
+  margin: 2rem;
+  border-radius: 2em;
+  border: 0;
+  height: 3em;
+  width: 20rem;
+}
 #signinp {
   text-align: center;
   margin-top: 2em;
@@ -748,4 +760,7 @@ select,
   .signin-heading {
     font-size: 1.6em;
   }
+}
+.sign_in_body{
+  margin-top: 10rem;
 }
