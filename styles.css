@@ -764,3 +764,77 @@ select,
 .sign_in_body{
   margin-top: 10rem;
 }
+
+.ngo-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.ngo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ngo-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.ngo-card:hover {
+  transform: translateY(-5px);
+}
+
+.ngo-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.ngo-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #005792;
+}
+
+.ngo-description,
+.ngo-location,
+.ngo-rating {
+  font-size: 0.95em;
+  color: #444;
+  margin: 5px 0;
+}
+
+.ngo-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: dodgerblue;
+  border: balck;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.ngo-link:hover {
+  text-decoration: underline;
+}
